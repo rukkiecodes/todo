@@ -7,6 +7,12 @@
       type="text"
       placeholder="New todo"
     />
+    <input
+      v-model="input"
+      @keypress.enter="addTodo"
+      type="text"
+      placeholder="New todo"
+    />
 
     <div v-for="(todo, i) in todos" :key="i" class="todo">
       <span> {{ todo }}</span>
